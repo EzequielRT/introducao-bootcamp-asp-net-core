@@ -6,6 +6,36 @@ namespace IntroducaoBootcampAspNetCore
     {
         static void Main(string[] args)
         {
+
+            //TiposDeDados();
+            ElseIf();
+        }        
+
+        public static void ElseIf()
+        {
+            Console.WriteLine("Digite uma opção entre 1 e 3: ");
+            var opcao = Console.ReadLine();
+
+            if (opcao == "1")
+            {
+                Console.WriteLine("Opção 1 selecionada");
+            } 
+            else if (opcao == "2")
+            {
+                Console.WriteLine("Opção 2 selecionada");
+            }
+            else if (opcao == "3")
+            {
+                Console.WriteLine("Opção 2 selecionada");
+            }
+            else
+            {
+                Console.WriteLine("Opção inválida");
+            }
+        }
+
+        public static void TiposDeDados()
+        {
             var umaString = "essa é uma string";
             var numeroInt = 5;
             var numeroFloat = 5.4f;
@@ -25,7 +55,6 @@ namespace IntroducaoBootcampAspNetCore
             Console.WriteLine($"{caractere}");
             Console.WriteLine($"{data}");
             Console.WriteLine($"{boolean}");
-
         }
     }
 }
