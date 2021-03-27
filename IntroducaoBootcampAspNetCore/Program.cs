@@ -9,7 +9,19 @@ namespace IntroducaoBootcampAspNetCore
 
             //TiposDeDados();
             //ElseIf();
-            SwitchCase();
+            //SwitchCase();
+            For();
+        }
+
+        public static void For()
+        {
+            var valores = Console.ReadLine(); // "1 2 3 4 5"
+            var valoresArray = valores.Split(" "); // [ "1", "2", "3", "4", "5"]  
+
+            for (var i = 0; i < valoresArray.Length; i++)
+            {
+                Console.Write(valoresArray[i] + " ");
+            }
         }
 
         public static void SwitchCase()
