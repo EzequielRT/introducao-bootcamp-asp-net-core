@@ -10,7 +10,24 @@ namespace IntroducaoBootcampAspNetCore
             //TiposDeDados();
             //ElseIf();
             //SwitchCase();
-            For();
+            //For();
+            While();
+        }
+
+        public static void While()
+        {
+            var valores = Console.ReadLine(); // "1 2 3 4 5"
+            var valoresArray = valores.Split(" "); // [ "1", "2", "3", "4", "5"]  
+
+            var contador = 0;
+
+            while (contador < valoresArray.Length)
+            {
+                Console.Write(valoresArray[contador] + " ");
+
+                contador++;
+            }
+
         }
 
         public static void For()
