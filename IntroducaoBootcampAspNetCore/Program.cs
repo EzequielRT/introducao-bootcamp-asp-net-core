@@ -8,8 +8,30 @@ namespace IntroducaoBootcampAspNetCore
         {
 
             //TiposDeDados();
-            ElseIf();
-        }        
+            //ElseIf();
+            SwitchCase();
+        }
+
+        public static void SwitchCase()
+        {
+            Console.WriteLine("Digite uma opção entre 1 e 3: ");
+            var opcao = Console.ReadLine();
+            switch (opcao)
+            {
+                case "1":
+                    Console.WriteLine("Opção 1 selecionada");
+                    break;
+                case "2":
+                    Console.WriteLine("Opção 2 selecionada");
+                    break;
+                case "3":
+                    Console.WriteLine("Opção 3 selecionada");
+                    break;
+                default:
+                    Console.WriteLine("Opção inválida");
+                    break;
+            }
+        }
 
         public static void ElseIf()
         {
