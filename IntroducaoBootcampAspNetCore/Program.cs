@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace IntroducaoBootcampAspNetCore
 {
@@ -11,7 +13,27 @@ namespace IntroducaoBootcampAspNetCore
             //ElseIf();
             //SwitchCase();
             //For();
-            While();
+            //While();
+            Lists();
+        }
+
+        public static void Lists()
+        {
+            var notasTurmas = new List<int> { 10, 5, 2, 3, 10, 4, 3, 2, 9, 10, 6, 7, 10, 2, 3, 4, 5, 7 };
+
+            var anyNota1 = notasTurmas.Any(n => n == 1);
+            var firstNota10 = notasTurmas.First(n => n == 10);
+            var singleNota9 = notasTurmas.Single(n => n == 9);
+            var orderedNotas = notasTurmas.OrderBy(n => n);
+            var max = notasTurmas.Max();
+            var min = notasTurmas.Min();
+            var sum = notasTurmas.Sum();
+            var mediaNotas = notasTurmas.Average();
+
+            foreach (var nota in notasTurmas)
+            {
+                Console.WriteLine(nota);
+            }
         }
 
         public static void While()
